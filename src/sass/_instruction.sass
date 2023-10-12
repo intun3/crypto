@@ -1,0 +1,158 @@
+.instruction
+    background: $color-light
+    @media (prefers-color-scheme: dark)
+        background: $color-back-dark
+    padding-block: 12rem
+    margin-bottom: 12rem
+    grid-column: page-start / page-end
+    display: grid
+    grid-template-columns: [page-start] minmax(1rem, 1fr) [content-start] repeat(12, [col-start] minmax(min-content, 8.2rem) [col-end]) [content-end] minmax(1rem, 1fr) [page-end]
+    grid-column-gap: 2rem
+    @include respond(phone)
+        grid-template-columns: [page-start] minmax(.1rem, 1fr) [content-start] repeat(6, [col-start] minmax(4.6rem, 8.2rem) [col-end]) [content-end] minmax(.1rem, 1fr) [page-end]
+        grid-column: 1 / -1
+    &__title
+        grid-column: content-start / content-end
+        text-align: center
+        margin-bottom: 4rem
+        @include respond(phone)
+            grid-column: col-start 1 / col-end 6
+    &__text-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-bottom: 4rem
+        &-1
+            grid-column: content-start / col-end 5
+            @include respond(phone)
+                grid-column: col-start 1 / col-end 6
+                display: grid
+                grid-template-columns: min-content 1fr
+                grid-column-gap: 1.6rem
+        &-2
+            grid-column: col-start 8 / content-end
+            @include respond(phone)
+                grid-column: col-start 1 / col-end 6
+                display: grid
+                grid-template-columns: min-content 1fr
+                grid-column-gap: 1.6rem
+    &__num
+        margin-bottom: 2rem
+        color: $color-white
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100rem
+        width: 6.4rem
+        height: 6.4rem
+        background: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%)
+        @media (prefers-color-scheme: dark)
+            color: $color-dark
+            background: $color-white
+    &__text-title
+        margin-bottom: 2rem
+        color: $color-white
+    &__text
+        &-1
+            margin-bottom: 0.8rem
+            @include respond(phone)
+                grid-column: 2 / 3
+                font-size: 3rem
+                font-weight: 300
+                line-height: 150%
+                color: rgba($color-white, .8)
+        &-2
+            color: $color-dark-80
+            margin-bottom: 2rem
+            @media (prefers-color-scheme: dark)
+                color: $color-white
+            @include respond(phone)
+                grid-column: 2 / 3
+                font-size: 3rem
+                font-weight: 300
+                line-height: 150%
+                color: rgba($color-white, .8)
+        &-3
+            color: $color-dark-80
+            margin-bottom: 2rem
+            @media (prefers-color-scheme: dark)
+                color: $color-white
+            @include respond(phone)
+                grid-column: 2 / 3
+                font-size: 3rem
+                font-weight: 300
+                line-height: 150%
+                color: rgba($color-white, .8)
+    &__list
+        &-2
+            padding-left: 2rem
+            @include respond(phone)
+                grid-column: 2 / 3
+        &-2-item
+            color: $color-blue
+            @include respond(phone)
+                font-size: 3rem
+                font-weight: 500
+                line-height: 150%
+            &:not(last-child)
+                margin-bottom: .8rem
+        &-3
+            @include respond(phone)
+                grid-column: 2 / 3
+        &-3-item
+            color: $color-dark-80
+            @include respond(phone)
+                font-size: 3rem
+                font-weight: 300
+                line-height: 150%
+                color: rgba($color-white, .8)
+            @media (prefers-color-scheme: dark)
+                color: $color-white
+            &:first-child
+                margin-bottom: .8rem
+        &-3-item::marker
+            color: $color-blue
+                
+    
+    &__box
+        height: 48.8rem
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 4rem
+        margin-bottom: 4rem
+        &-1
+            background: $grad-bg-purple
+            grid-column: col-start 7 / content-end
+            @include respond(phone)
+                grid-column: col-start 1 / col-end 6
+                padding: 4rem 4rem
+                height: min-content
+                grid-row: 2 / 3
+        &-2
+            background: $grad-bg-yellow
+            grid-column: content-start / col-end 6
+            @include respond(phone)
+                grid-column: col-start 1 / col-end 6
+                padding: 15rem 4rem
+                height: min-content
+        &-3
+            background: $grad-bg-blue
+            grid-column: col-start 7 / content-end
+            @include respond(phone)
+                grid-column: col-start 1 / col-end 6
+                padding: 6rem 4rem
+                height: min-content
+                grid-row: 6 / 7
+    &__img-1
+        width: 39.2rem
+        @include respond(phone)
+            width: 100%
+    &__img-2
+        width: 39.4rem
+        @include respond(phone)
+            width: 100%
+    &__img-3
+        width: 40.3rem
+        @include respond(phone)
+            width: 100%

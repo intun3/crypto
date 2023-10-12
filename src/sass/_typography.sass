@@ -1,0 +1,130 @@
+body
+    color: $color-dark
+    font-family: 'Inter', sans-serif
+    font-size: 2rem
+    font-style: normal
+    font-weight: 400
+    line-height: 120%
+    @media (prefers-color-scheme: dark)
+        color: $color-white
+
+.text-button
+    text-align: center
+    font-size: 2rem
+    font-weight: 500
+    &_white
+        color: $color-white
+
+.title-1
+    color: $color-dark
+    font-size: 8rem
+    font-weight: 600
+    line-height: 110%
+    letter-spacing: -2.4px
+    @media (prefers-color-scheme: dark)
+        color: $color-white
+    &__span
+        color: $color-blue
+
+.title-2
+    color: $color-blue
+    font-size: 5.6rem
+    font-weight: 600
+    line-height: 110%
+    letter-spacing: -1.68px
+    &_black
+        color: $color-main-text
+        @media (prefers-color-scheme: dark)
+            color: $color-white
+    &_white
+        color: $color-white
+    &__span
+        color: $color-white
+    &__span-2
+        color: $color-blue
+
+.title-3
+    color: $color-dark
+    font-size: 4.2rem
+    font-weight: 600
+    line-height: 110%
+    letter-spacing: -1.26px
+    @media (prefers-color-scheme: dark)
+        color: $color-white
+    @include respond(phone)
+        font-size: 4.6rem
+        color: rgba($color-white, .8)
+
+.currency__text
+    color: $color-dark-40
+    font-size: 1.4rem
+    font-weight: 500
+    text-transform: uppercase
+
+.text-base
+    color: $color-dark-80
+    @media (prefers-color-scheme: dark)
+            color: $color-white
+    @include respond(phone)
+        font-size: 2.55rem
+        color: rgba($color-white, .8)
+        line-height: 150%
+        letter-spacing: .05rem
+        font-weight: 300
+    &_white
+        color: $color-white
+    &__span
+        color: $color-blue
+        font-weight: 500
+
+.text-chat
+    font-family: 'SF Pro Display', sans-serif
+    color: $color-black
+    font-size: 1.9015rem
+    font-style: normal
+    font-weight: 400
+    line-height: 117.647%
+    letter-spacing: -0.559px
+    &__span-2
+        color: $color-dark
+        font-weight: 590
+    &__span-1
+        color: $color-black
+        font-weight: 590
+    &__button
+        color: $color-white
+        font-weight: 400
+        line-height: 94.118%
+        letter-spacing: 0.559px
+    &__time
+        color: $color-dark-40
+        font-size: 1.4541rem
+        font-weight: 510
+        line-height: 138.462%
+    
+.text-mockup
+    font-family: 'SF Pro Display', sans-serif
+    color: $color-black
+    letter-spacing: 120%
+    font-style: normal
+    font-weight: 400
+    line-height: 110%
+    font-size: 1.4rem
+    @media (prefers-color-scheme: dark)
+        color: $color-white
+    &__span-1
+        font-family: 'SF Pro Display', sans-serif
+        font-size: 1.4rem
+        font-weight: 650
+        display: flex
+        justify-content: space-between
+        color: $color-dark
+        @media (prefers-color-scheme: dark)
+            color: $color-white
+    &__time
+        color: $color-dark-40
+        font-size: 1.4541rem
+        font-weight: 510
+        line-height: 138.462%
+        @media (prefers-color-scheme: dark)
+            color: rgba($color-white, .4)

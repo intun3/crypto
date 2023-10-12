@@ -1,0 +1,113 @@
+$color-blue: #41A4DF
+$color-blue-deep: #297EE2
+
+$color-black: #000000   
+$color-dark: #0D0D12
+$color-dark-40: rgba(17, 17, 17, 0.4)
+$color-dark-80: rgba(17, 17, 17, 0.8)
+$color-dark-blue: #232328
+$color-dark-light: #1A1A1A
+$color-back-dark:#18181D
+
+$color-white: #FFFFFF
+$color-light: #F7F9FB
+
+$bitcoin: linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%)
+$ton: linear-gradient(211deg, #04BEFE -2.24%, #4481EB 108.4%)
+$usdt: linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%)
+
+$bg-button: rgba(54, 136, 194, 0.82)
+
+$color-main-text: #252525
+
+$grad-bg-pink: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%)
+$grad-bg-yellow: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%)
+$grad-bg-blue: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%)
+$grad-bg-purple: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%)
+$grad-blue: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%)
+
+
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 455px)
+            @content
+    @if $breakpoint == break-7
+        @media only screen and (max-width: 599px)
+            @content
+    @if $breakpoint == break-6
+        @media only screen and (max-width: 744px)
+            @content
+    @if $breakpoint == break-5
+        @media only screen and (max-width: 888px)
+            @content
+    @if $breakpoint == break-4
+        @media only screen and (max-width: 1033px)
+            @content
+    @if $breakpoint == break-3
+        @media only screen and (max-width: 1179px)
+            @content
+    @if $breakpoint == break-2
+        @media only screen and (max-width: 1324px)
+            @content
+    @if $breakpoint == break-1
+        @media only screen and (max-width: 1470px)
+            @content
+    @if $breakpoint == big-screen
+        @media only screen and (min-width: 1800px)
+            @content
+
+    
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+    @include respond(break-1)
+        font-size: 56.25%
+    @include respond(break-2)
+        font-size: 50%
+    @include respond(break-3)
+        font-size: 43.75%
+    @include respond(break-4)
+        font-size: 37.5%
+    @include respond(break-5)
+        font-size: 31.25%
+    @include respond(break-6)
+        font-size: 25%
+    @include respond(break-7)
+        font-size: 18.75%
+    @include respond(phone)
+        font-size: 37.5%
+    
+
+body
+    background-color: $color-dark-blue
+    display: grid
+    grid-template-columns: [page-start] minmax(1rem, 1fr) [content-start] repeat(12, [col-start] minmax(min-content, 8.2rem) [col-end]) [content-end] minmax(1rem, 1fr) [page-end]
+    grid-column-gap: 2rem
+    @include respond(phone)
+        grid-template-columns: [page-start] minmax(.1rem, 1fr) [content-start] repeat(6, [col-start] minmax(4.6rem, 8.2rem) [col-end]) [content-end] minmax(.1rem, 1fr) [page-end]
+        
+
+.container
+    padding-top: 4rem
+    background-color: $color-white
+    display: grid
+    grid-column: page-start / page-end
+    border-radius: 0 0 4rem 4rem
+    grid-template-columns: [page-start] minmax(1rem, 1fr) [content-start] repeat(12, [col-start] minmax(min-content, 8.2rem) [col-end]) [content-end] minmax(1rem, 1fr) [page-end]
+    grid-column-gap: 2rem
+    @media (prefers-color-scheme: dark) 
+        background-color: $color-dark
+    @include respond(phone)
+        grid-template-columns: [page-start] minmax(.1rem, 1fr) [content-start] repeat(6, [col-start] minmax(4.6rem, 8.2rem) [col-end]) [content-end] minmax(.1rem, 1fr) [page-end]
+
+
+
+.item
+    width: 100%
+    background-color: red
+    color: $color-white

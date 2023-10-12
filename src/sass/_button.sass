@@ -1,0 +1,26 @@
+.btn
+    border: none
+    color: $color-white
+    text-align: center
+    border-radius: 100rem
+    padding: 1.8rem 4.2rem
+    background-color: $color-blue
+    width: max-content
+    font-size: 1.8rem
+    &:hover
+        cursor: pointer
+    &_light-blue
+        color: $color-blue-deep
+        background-color: rgb($color-blue-deep, 0.12)
+        @media (prefers-color-scheme: dark)
+            color: $color-white
+            background: none
+            border: .1rem solid $color-white
+    &_light-blue-api
+        background-color: rgb($color-blue-deep, 0.0)
+        border: .1rem solid $color-white
+    &_blue
+        background-color: $color-white
+    &_white
+        background: none
+        border: .1rem solid $color-white

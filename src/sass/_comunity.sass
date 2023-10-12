@@ -1,0 +1,39 @@
+.comunity
+    grid-column: content-start / content-end
+    grid-column-gap: 2rem
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    margin-bottom: 8rem
+    @include respond(phone)
+        grid-column: col-start 1 / col-end 6
+        grid-template-columns: repeat(6, 1fr)
+    &__title
+        grid-column: 1 / -1
+        margin-bottom: 2.4rem
+        text-align: center
+    &__text
+        margin-bottom: 4rem
+        text-align: center
+        grid-column: 1 / -1
+    &__libs
+        grid-column: 2 / 12
+        display: grid
+        grid-template-columns: repeat(10, 1fr)
+        grid-column-gap: 2rem
+        margin-bottom: 4rem
+        @include respond(phone)
+            grid-column: 1 / 7
+            grid-template-columns: repeat(6, 1fr)
+    &__lib
+        grid-column: span 2
+        text-align: center
+    &__img
+        width: 9.6rem
+        height: 9.6rem
+        margin-bottom: .6rem
+    &__btn
+        grid-column: 1/-1
+        justify-self: center
+        @include respond(phone)
+            font-size: 2.7rem
+

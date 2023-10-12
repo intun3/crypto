@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <title>CryptoPay</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="icons/logo.svg" alt="logo" class="header__logo">
+            <div class="header__text-wrapper">
+                <p class="text-button">Use cases</p>
+                <p class="text-button">Features</p>
+                <p class="text-button">How to start</p>
+            </div>
+            <button class="btn btn_light-blue text-button">Get started</button>
+        </header>
+        <div class="home-left">
+            <h1 class="title-1 home-left__title">Crypto payments for <span class="title-1__span">telegram bots</span></h1>
+            <p class="home-left__text">Seamlessly accept crypto payments<br>in your Telegram bots and services.</p>
+            <button class="btn text-button home-left__btn">Get started</button>
+            <div class="home-left__img"></div>
+            <p class="home-left__text-end">Popular bots use Crypto Pay</p>
+        </div>
+        <div class="home-right">
+            <div class="home-right__img">
+            </div>
+        </div>
+        <div class="usecases">
+            <input class="scrollbar__input" type="radio" id="cluster-1" name="checked" checked>
+            <input class="scrollbar__input" type="radio" id="cluster-2" name="checked">
+            <input class="scrollbar__input" type="radio" id="cluster-3" name="checked">
+            <div class="usecases__pic">
+                <div class="usecases__img-wrapper mb1" id="w-1">
+                    <img class="usecases__img" src="img/chat-1-1.png" alt="message">
+                    <img class="usecases__img" src="img/chat-1-2.png" alt="message">
+                </div>
+                <div class="usecases__img-wrapper mb2" id="w-2">
+                    <img class="usecases__img" src="img/chat-2-1.png" alt="message">
+                    <img class="usecases__img" src="img/chat-2-2.png" alt="message">
+                </div>
+                <div class="usecases__img-wrapper" id="w-3">
+                    <img class="usecases__img" src="img/chat-3-1.png" alt="message">
+                    <img class="usecases__img" src="img/chat-3-2.png" alt="message">
+                </div>
+            </div>
+            <div class="usecases__text-1">
+                <h2 class="title-2 usecases__title">Instant<br>Auto Sales:<br><span class="title-2__span">Boost conversion</span></h2>
+                <p class="usecases__paragraph">Immediately deliver digital product<br>sand services to your users.</p>
+                <button class="btn text-button usecases__button">Open API Docs</button>
+            </div>
+            <div class="usecases__text-2">
+                <h2 class="title-2 usecases__title">Channels<br>integration: <br><span class="title-2__span">Seamless access</span></h2>
+                <p class="usecases__paragraph">Automatically unlock exclusive content <br>to your users.</p>
+                <button class="btn text-button usecases__button">Open API Docs</button>
+            </div>
+            <div class="usecases__text-3">
+                <h2 class="title-2 usecases__title">Endless<br>integration: <br><span class="title-2__span">with Webhooks</span></h2>
+                <p class="usecases__paragraph">Receive successful payment notifications in<br>real-time. Integrate to any scenario of your service.</p>
+                <button class="btn text-button usecases__button">Open API Docs</button>
+            </div>
+            <div class="scrollbar">
+                <p class="scrollbar__text">01</p>
+                <div>
+                    <label class="scrollbar__cluster" for="cluster-1">
+                        <div class="scrollbar__cluster-hr" id="hr-1"></div>
+                    </label>
+                </div>
+                <div>
+                    <label class="scrollbar__cluster" for="cluster-2">
+                        <div class="scrollbar__cluster-hr" id="hr-2"></div>
+                    </label>
+                </div>
+                <div>
+                    <label class="scrollbar__cluster" for="cluster-3">
+                        <div class="scrollbar__cluster-hr " id="hr-3"></div>
+                    </label>
+                </div>
+                <p class="scrollbar__text">03</p>
+            </div>
+        </div>
+        <div class="features-currencies">
+            <h3 class="title-3 title-3__dinamic features-currencies__title">Accept a wide range of cryptocurrencies</h3>
+            <p class="features-currencies__text">Bill any supported cryptocurrencies with <span class="features-currencies__span-1">asset</span> parameter in <span class="features-currencies__span-2">GetInvoice</span> method</p>
+            <div class="currency-wrapper">
+                <figure class="currency">
+                    <img src="icons/ETH.svg" alt="ETH" class="currency__img currency__img-1 ''">
+                    <figcaption class="currency__text currency__text-1">ETH</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/USDT.svg" alt="USDT" class="currency__img currency__img-2  ">
+                    <figcaption class="currency__text currency__text-2">USDT</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/TON.svg" alt="TON" class="currency__img currency__img-3  ">
+                    <figcaption class="currency__text currency__text-3">TON</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/BTC.svg" alt="BTC" class="currency__img currency__img-4  ">
+                    <figcaption class="currency__text currency__text-4">BTC</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/TRX.svg" alt="TRX" class="currency__img currency__img-5  ">
+                    <figcaption class="currency__text currency__text-5">TRX</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/LTC.svg" alt="LTC" class="currency__img currency__img-6  ">
+                    <figcaption class="currency__text currency__text-6">LTC</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/USDC.svg" alt="USDC" class="currency__img currency__img-7  ">
+                    <figcaption class="currency__text currency__text-7">USDC</figcaption>
+                </figure>
+                <figure class="currency">
+                    <img src="icons/BNB.svg" alt="BNB" class="currency__img currency__img-8  ">
+                    <figcaption class="currency__text currency__text-8">BNB</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="feature-comission">
+            <div class="feature-comission__button-wrapper">
+                <div class="feature-comission__button  ">
+                    <img src="img/features-tree.png" alt="tree" class="feature-comission__img">
+                    <p>Create App</p>
+                </div>
+                <img src="icons/feature-cursor.svg" alt="cursor" class="feature-comission__cursor  ">
+            </div>
+            <h3 class="title-3 title-3__dinamic mb20">One click to start</h3>
+            <p class="text-base">Open <span class="feature-comission__span">@CryptoBot</span>, go to <span class="text-base__span">Crypto Pay</span> <br>and tap Create App to get API Token</p>
+        </div>
+        <div class="feature-exchange">
+            <div class="feature-exchange__animation">
+                <div class="feature-exchange__img-1  ">
+                    <img src="icons/USDT-v.svg" alt="USDT" class="feature-exchange__img-1-2  ">
+                </div>
+                <div class="feature-exchange__img-2  ">
+                    <img src="icons/BTC-v.svg" alt="BTC" class="feature-exchange__img-2-2  ">
+                </div>
+                <div class="feature-exchange__img-3  ">
+                    <img src="icons/TON-v.svg" alt="TON" class="feature-exchange__img-3-2  ">
+                </div>
+                <div class="feature-exchange__button">
+                    <img src="icons/arrow-right.svg" alt="arrow-right" class="feature-exchange__arrow-right">
+                    <img src="icons/arrow-left.svg" alt="arrow-left" class="feature-exchange__arrow-left">
+                </div>
+                <img src="icons/Dollar.svg" alt="Dollar" class="feature-exchange__img-4">
+            </div>
+            <h3 class="title-3 title-3__dinamic mb20">Real-time<br>exchange rates</h3>
+            <p class="text-base">Request up to date currency rate with the <span class="text-base__span">getExchangeRates</span> API method</p>
+        </div>
+        <div class="feature-stat">
+            <div class="feature-stat__box">
+                <div class="feature-stat__message feature-stat__message-1">
+                    <p class="text-chat">Application Statistics <span class="text-chat__span-2">@GoodsBot</span> for <span class="text-chat__span-1">all time:</span></p>
+                    <br>
+                    <p class="text-chat">Volume: <span class="text-chat__span-1">$204,920</span></p>
+                    <br>
+                    <p class="text-chat">The number of created invoices: <span class="text-chat__span-1">16,256</span></p>
+                    <p class="text-chat">Number of payments: <span class="text-chat__span-1">9,353</span></p>
+                    <p class="text-chat">Number of users: <span class="text-chat__span-1">5,606</span></p>
+                    <br>
+                    <div class="feature-stat__time-box">
+                        <p class="text-chat">Conversion: <span class="text-chat__span-1">57%</span></p>
+                        <p class="text-chat__time">21:30</p>
+                    </div>
+                </div>
+                <div class="feature-stat__message-2">
+                    <p class="text-chat">Application Statistics <span class="text-chat__span-2">@GoodsBot</span> for <span class="text-chat__span-1">today:</span></p>
+                    <br>
+                    <p class="text-chat">Volume: <span class="text-chat__span-1">$6,530</span></p>
+                    <br>
+                    <p class="text-chat">The number of created invoices: <span class="text-chat__span-1">2,569</span></p>
+                    <p class="text-chat">Number of payments: <span class="text-chat__span-1">1,253</span></p>
+                    <p class="text-chat">Number of users: <span class="text-chat__span-1">1,606</span></p>
+                    <br>
+                    <div class="feature-stat__time-box">
+                        <p class="text-chat">Conversion: <span class="text-chat__span-1">48%</span></p>
+                        <p class="text-chat__time">21:30</p>
+                    </div>
+                </div>
+                <div class="feature-stat__message-3">
+                    <p class="text-chat">Application Statistics <span class="text-chat__span-2">@GoodsBot</span> for <span class="text-chat__span-1">yesterday:</span></p>
+                    <br>
+                    <p class="text-chat">Volume: <span class="text-chat__span-1">$8,216</span></p>
+                    <br>
+                    <p class="text-chat">The number of created invoices: <span class="text-chat__span-1">4,980</span></p>
+                    <p class="text-chat">Number of payments: <span class="text-chat__span-1">3,012</span></p>
+                    <p class="text-chat">Number of users: <span class="text-chat__span-1">3,606</span></p>
+                    <br>
+                    <div class="feature-stat__time-box">
+                        <p class="text-chat">Conversion: <span class="text-chat__span-1">60%</span></p>
+                        <p class="text-chat__time">21:30</p>
+                    </div>
+                </div>
+                <div class="feature-stat__button-1 feature-stat__button text-chat text-chat__button"><span class="feature-stat__span-1">·</span> All Time <span class="feature-stat__span-1">·</span></div>
+                <div class="feature-stat__button-2 feature-stat__button text-chat text-chat__button"><span class="feature-stat__span-2">·</span> Today <span class="feature-stat__span-2">·</span></div>
+                <div class="feature-stat__button-3 feature-stat__button text-chat text-chat__button"><span class="feature-stat__span-3">·</span> Yesterday <span class="feature-stat__span-3">·</span></div>
+                <div class="feature-stat__button-4 feature-stat__button text-chat text-chat__button">Week</div>
+                <div class="feature-stat__button-5 feature-stat__button text-chat text-chat__button">Month</div>
+                <div class="feature-stat__button-6 feature-stat__button text-chat text-chat__button">Back</div>
+            </div>
+            <h3 class="title-3 title-3__dinamic mb20">Payment statistics</h3>
+            <p class="text-base">Open <span class="text-base__span">@CryptoBot</span>, go to <span class="text-base__span">Crypto Pay</span> and <span class="text-base__span">My Apps</span>,<br>App Name to get Statistics</p>
+        </div>
+        <div class="feature-verif">
+            <div class="feature-verif__mockup">
+                <div class="feature-verif__animation-box feature-verif__animation-box-1">
+                    <div class="feature-verif__logo-box">
+                        <img src="icons/logo.svg" alt="" class="feature-verif__logo">
+                        <div class="feature-verif__logo-2-wrapper">
+                            <img src="icons/telegram.svg" alt="" class="feature-verif__logo-2">
+                        </div>
+                    </div>
+                    <div class="feature-verif__text-wrapper">
+                        <div class="feature-verif__mockup-title"><p class="text-mockup__span-1">Crypto Bot </p><span class="text-mockup__time">now</span></div>
+                        <p class="text-mockup mb10"><img src="img/emoji-money.png" alt="mes" class="feature-verif__emoji"> You received 3448 TON ($5000)<br>from @CryptoBot #A777</p>
+                        <p class="text-mockup"><img src="img/emoji-mes.png" alt="mes" class="feature-verif__emoji"> Design contest awards <img src="img/emoji-gold.png" alt="mes" class="feature-verif__emoji"></p>
+                    </div>
+                </div>
+                <div class="feature-verif__animation-box feature-verif__animation-box-2">
+                    <div class="feature-verif__logo-box">
+                        <img src="icons/logo.svg" alt="" class="feature-verif__logo">
+                        <div class="feature-verif__logo-2-wrapper">
+                            <img src="icons/telegram.svg" alt="" class="feature-verif__logo-2">
+                        </div>
+                    </div>
+                    <div class="feature-verif__text-wrapper">
+                        <div class="feature-verif__mockup-title width-135p"><p class="text-mockup__span-1">Crypto Bot </p><span class="text-mockup__time">now</span></div>
+                        <p class="text-mockup mb10"><img src="img/emoji-money.png" alt="mes" class="feature-verif__emoji"> You received 8478 TON ($10000)<br> from @CryptoBot #A820</p>
+                        <p class="text-mockup"><img src="img/emoji-mes.png" alt="mes" class="feature-verif__emoji"> Congrats! You are winner <img src="img/emoji-rocket.png" alt="mes" class="feature-verif__emoji"></p>
+                    </div>
+                </div>
+                <div class="feature-verif__animation-box feature-verif__animation-box-3">
+                    <div class="feature-verif__logo-box">
+                        <img src="icons/logo.svg" alt="" class="feature-verif__logo">
+                        <div class="feature-verif__logo-2-wrapper">
+                            <img src="icons/telegram.svg" alt="" class="feature-verif__logo-2">
+                        </div>
+                    </div>
+                    <div class="feature-verif__text-wrapper">
+                        <div class="feature-verif__mockup-title"><p class="text-mockup__span-1">Crypto Bot </p><span class="text-mockup__time">now</span></div>
+                        <p class="text-mockup mb10"><img src="img/emoji-money.png" alt="mes" class="feature-verif__emoji"> You received 2300 TON ($1000)<br> from @CryptoBot #A820</p>
+                        <p class="text-mockup"><img src="img/emoji-mes.png" alt="mes" class="feature-verif__emoji"> We appreciate your interest <img src="img/emoji-finally.png" alt="mes" class="feature-verif__emoji"></p>
+                    </div>
+                </div>
+                <div class="feature-verif__animation-box feature-verif__animation-box-4">
+                    <div class="feature-verif__logo-box">
+                        <img src="icons/logo.svg" alt="" class="feature-verif__logo">
+                        <div class="feature-verif__logo-2-wrapper">
+                            <img src="icons/telegram.svg" alt="" class="feature-verif__logo-2">
+                        </div>
+                    </div>
+                    <div class="feature-verif__text-wrapper">
+                        <div class="feature-verif__mockup-title"><p class="text-mockup__span-1">Crypto Bot </p><span class="text-mockup__time">now</span></div>
+                        <p class="text-mockup mb10"><img src="img/emoji-money.png" alt="mes" class="feature-verif__emoji"> You received 3448 TON ($5000)<br>from @CryptoBot #A777</p>
+                        <p class="text-mockup"><img src="img/emoji-mes.png" alt="mes" class="feature-verif__emoji"> Design contest awards <img src="img/emoji-gold.png" alt="mes" class="feature-verif__emoji"></p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title-3 title-3__dinamic mb20">Send coins to users</h3>
+            <p class="text-base">Automate payouts to users with <span class="text-base__span">transfer</span> API method</p>
+        </div>
+        <div class="feature-anon">
+            <div class="feature-anon__box">
+                <img src="img/anon-mes-1.png" alt="message" class="feature-anon__message-0">
+                <img src="img/anon-mes-1.png" alt="message" class="feature-anon__message-1">
+                <img src="img/anon-mes-2.png" alt="message" class="feature-anon__message-2">
+                <img src="img/anon-mes-3.png" alt="message" class="feature-anon__message-3">
+                <img src="img/anon-mes-1.png" alt="message" class="feature-anon__message-4">
+            </div>
+            <h3 class="title-3 title-3__dinamic mb20">Anonymous <br>payments</h3>
+            <p class="text-base">Use allow_anonymous parameter<br>in <span class="text-base__span">createInvoice</span> method to give user<br>an option to remain private</p>
+        </div>
+        <div class="instruction">
+            <div class="instruction__title">
+                <h2 class="title-2 title-2_black">Quick start using <span class="title-2__span-2">Crypto Pay</span></h2>
+            </div>
+            <div class="instruction__text-wrapper instruction__text-wrapper-1">
+                <div class="instruction__num title-3">1</div>
+                <h3 class="title-3 instruction__text-title">Authorizing your app</h3>
+                <p class="instruction__text-1">1. Open <span class="text-base__span">@CryptoBot</span></p>
+                <p class="instruction__text-1">2. Go to <span class="text-base__span">Crypto Pay</span> </p>
+                <p class="instruction__text-1">3. Tap <span class="text-base__span">Create App</span> </p>
+                <p class="instruction__text-1">4. Get <span class="text-base__span">API Token</span></p>
+            </div>
+            <div class="instruction__box instruction__box-1">
+                <img src="img/intruct-1.png" alt="" class="instruction__img-1">
+            </div>
+            <div class="instruction__box instruction__box-2">
+                <img src="img/instruct-2.png" alt="notification" class="instruction__img-2">
+            </div>
+            <div class="instruction__text-wrapper instruction__text-wrapper-2">
+                <div class="instruction__num title-3">2</div>
+                <h3 class="title-3 instruction__text-title">Crypto Pay API Request</h3>
+                <p class="instruction__text-1">Requests are only served over HTTPS<br>To pass parameters use:</p>
+                <ul class="instruction__list-2">
+                    <li class="instruction__list-2-item">URL query string</li>
+                    <li class="instruction__list-2-item">application/json </li>
+                    <li class="instruction__list-2-item">application/x-www-form-urlencoded</li>
+                    <li class="instruction__list-2-item">multipart/form-data</li>
+                </ul>
+            </div>
+            <div class="instruction__text-wrapper instruction__text-wrapper-1">
+                <div class="instruction__num title-3">3</div>
+                <h3 class="title-3 instruction__text-title">Getting updates</h3>
+                <p class="instruction__text-3">There are two ways of receiving<br>for your app:</p>
+                <ul class="instruction__list-3">
+                    <li class="instruction__list-3-item"><span class="text-base__span">getInvoices</span> method to get a list of created invoices.</li>
+                    <li class="instruction__list-3-item"><span class="text-base__span">Webhooks</span> to receive updates in realtime.</li>
+                </ul>
+            </div>
+            <div class="instruction__box instruction__box-3">
+                <img src="img/instruct-3.png" alt="" class="instruction__img-3">
+            </div>
+        </div>
+        <div class="api-block">
+            <h2 class="api-block__title title-2">Crypto Pay API</h2>
+            <p class="api-block__text">Explore available methods and types <br>integrate them in any programming <br>language.</p>
+            <p class="api-block__text-2">Explore available methods and <br> types integrate them in any <br> programming language.</p>
+            <button class="btn btn_light-blue-api text-button api-block__button">Open API Docs</button>
+        </div>
+        <div class="comunity">
+            <h2 class="title-2 title-2_black comunity__title">Join dev community</h2>
+            <p class="text-base comunity__text">Connect with bot developers and explore the possibilities<br>our crypto payments service unlocks.</p>
+            <div class="comunity__libs">
+                <figure class="comunity__lib comunity__lib-1">
+                    <img src="icons/JS.png" alt="JS" class="comunity__img">
+                    <figcaption class="comunity__lib-name">crypto-pay-api</figcaption>
+                </figure>
+                <figure class="comunity__lib comunity__lib-2">
+                    <img src="icons/NET.png" alt="JS" class="comunity__img">
+                    <figcaption class="comunity__lib-name">CryptoPay</figcaption>
+                </figure>
+                <figure class="comunity__lib comunity__lib-3">
+                    <img src="icons/php.png" alt="JS" class="comunity__img">
+                    <figcaption class="comunity__lib-name">crypto-pay-api</figcaption>
+                </figure>
+                <figure class="comunity__lib comunity__lib-4">
+                    <img src="icons/Python.png" alt="JS" class="comunity__img">
+                    <figcaption class="comunity__lib-name">aiocryptopay</figcaption>
+                </figure>
+                <figure class="comunity__lib comunity__lib-5">
+                    <img src="icons/go.png" alt="JS" class="comunity__img">
+                    <figcaption class="comunity__lib-name">cryptobot-sdk-golang</figcaption>
+                </figure>
+            </div>
+            <button class="btn text-button comunity__btn">Open Devs chat</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__box">
+            <img src="icons/logo.svg" alt="logo" class="footer__logo">
+            <div class="footer__text-wrapper">
+                <p class="text-button text-button_white">Use cases</p>
+                <p class="text-button text-button_white">Features</p>
+                <p class="text-button text-button_white">How to start</p>
+            </div>
+            <button class="btn btn_white text-button">Get started</button>
+        </div>
+        <p class="footer__copyright text-button">©2023 Crypto Bot</p>
+    </footer>
+</body>
+</html>

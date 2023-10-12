@@ -1,0 +1,76 @@
+.scrollbar
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 1.2rem
+    grid-column: col-start 12 / col-end 12
+    justify-self: start
+    align-self: start
+    align-items: center
+    padding-top: 4rem
+    @include respond(phone)
+        grid-column: col-start 1 / col-end 6
+        flex-direction: row
+        width: 100%
+        padding-top: 3.2rem
+    &__text
+        color: $color-white
+        font-size: 1.4rem
+        font-weight: 500
+        line-height: 120% 
+        text-transform: uppercase
+    &__cluster
+        display: block
+        width: 15rem
+        display: flex
+        justify-content: center
+        @include respond(phone)
+            align-items: center
+            height: 6rem
+        &:hover
+            cursor: pointer
+    &__cluster-hr
+        background-color: rgba($color-white, 0.24)
+        height: 10.866rem
+        width: 0.4rem
+        @include respond(phone)
+            height: 0.4rem
+            width: 10.866rem
+    &__input
+        display: none
+
+#cluster-1:checked ~ .scrollbar #hr-1
+    background-color: $color-blue
+#cluster-2:checked ~ .scrollbar #hr-2
+    background-color: $color-blue
+#cluster-3:checked ~ .scrollbar #hr-3
+    background-color: $color-blue
+
+#cluster-1:checked ~ .usecases__text-1
+    display: block
+#cluster-2:checked ~ .usecases__text-2
+    display: block
+#cluster-3:checked ~ .usecases__text-3
+    display: block
+
+#cluster-1:checked ~ .usecases__pic>#w-1 
+    transform: translateY(0)
+#cluster-2:checked ~ .usecases__pic>#w-1
+    transform: translateY(-161%)
+#cluster-2:checked ~ .usecases__pic>#w-2
+    transform: translateY(-156%)
+#cluster-2:checked ~ .usecases__pic>#w-3
+    transform: translateY(-100%)
+#cluster-3:checked ~ .usecases__pic>#w-1
+    transform: translateY(-337%)
+#cluster-3:checked ~ .usecases__pic>#w-2
+    transform: translateY(-330%)
+#cluster-3:checked ~ .usecases__pic>#w-3
+    transform: translateY(-213%)
+
+#cluster-1:checked ~ .usecases__pic
+    opacity: 1
+#cluster-2:checked ~ .usecases__pic::before
+    opacity: 1
+#cluster-3:checked ~ .usecases__pic::after
+    opacity: 1

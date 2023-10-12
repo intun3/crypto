@@ -1,0 +1,19 @@
+.header
+    grid-column: content-start / content-end
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 6.5rem
+    @include respond(phone)
+        grid-column: col-start 1 / col-end 6
+    &__text-wrapper
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        gap: 3.2rem
+        @include respond(phone)
+            display: none
+    &__logo
+        width: 6.4rem
+        height: 6.4rem
