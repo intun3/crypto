@@ -51,8 +51,10 @@
             background: $color-white
     &__text-title
         margin-bottom: 2rem
-        @media (prefers-color-scheme: dark)
-            color: $color-white
+        @include respond(phone)
+            color: $color-dark
+            @media (prefers-color-scheme: dark)
+                color: $color-white
     &__text
         &-1
             margin-bottom: 0.8rem
@@ -61,7 +63,9 @@
                 font-size: 3rem
                 font-weight: 300
                 line-height: 150%
-                color: rgba($color-white, .8)
+                color: $color-dark-80
+                @media (prefers-color-scheme: dark)
+                    color: rgba($color-white, .8)
         &-2
             color: $color-dark-80
             margin-bottom: 2rem
@@ -72,7 +76,9 @@
                 font-size: 3rem
                 font-weight: 300
                 line-height: 150%
-                color: rgba($color-white, .8)
+                color: $color-dark-80
+                @media (prefers-color-scheme: dark)
+                    color: rgba($color-white, .8)
         &-3
             color: $color-dark-80
             margin-bottom: 2rem
@@ -83,7 +89,9 @@
                 font-size: 3rem
                 font-weight: 300
                 line-height: 150%
-                color: rgba($color-white, .8)
+                color: $color-dark-80
+                @media (prefers-color-scheme: dark)
+                    color: rgba($color-white, .8)
     &__list
         &-2
             padding-left: 2rem
@@ -102,13 +110,15 @@
                 grid-column: 2 / 3
         &-3-item
             color: $color-dark-80
+            @media (prefers-color-scheme: dark)
+                color: $color-white
             @include respond(phone)
                 font-size: 3rem
                 font-weight: 300
                 line-height: 150%
-                color: rgba($color-white, .8)
-            @media (prefers-color-scheme: dark)
-                color: $color-white
+                color: $color-dark-80
+                @media (prefers-color-scheme: dark)
+                    color: rgba($color-white, .8)
             &:first-child
                 margin-bottom: .8rem
         &-3-item::marker
