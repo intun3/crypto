@@ -51,7 +51,8 @@
             background: $color-white
     &__text-title
         margin-bottom: 2rem
-        color: $color-white
+        @media (prefers-color-scheme: dark)
+            color: $color-white
     &__text
         &-1
             margin-bottom: 0.8rem
